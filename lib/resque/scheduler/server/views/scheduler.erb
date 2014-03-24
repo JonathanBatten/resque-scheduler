@@ -3,7 +3,7 @@
 <p class='intro'>
   The list below contains all scheduled jobs.  Click &quot;Queue now&quot; to queue
   a job immediately.
-  Server local time: <%= Time.now %>
+  Server local time: <%= format_time(Time.zone.now) %>
 </p>
 <div style="overflow-y: auto; width:100%; padding: 0px 5px;">
 <table>

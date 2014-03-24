@@ -27,7 +27,7 @@
             <input type="submit" value="Cancel Job">
           </form>
         </td>
-        <td class='args'><%= format_time(Time.at(job['timestamp'])) %></td>
+        <td class='args'><%= format_time(Time.zone.at(job['timestamp'])) %></td>
         <td class='class'><%= job['class'] %></td>
         <td class='args'><%= h job['args'].inspect %></td>
       </tr>
